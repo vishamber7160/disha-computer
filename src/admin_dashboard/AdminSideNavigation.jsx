@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import "./sideNav.css";
+import "./adminSideNav.css";
 import {
   Dashboard,
   NewspaperTwoTone,
   AppRegistrationRounded,
 } from '@mui/icons-material'
 
-function SideNav() {
+function AdminSideNavigation() {
   return (
     <div className="sidenav">
-      <div className="dashboard"><Dashboard sx={{color:"white",fontSize:"2em"}}/><h1>Dashboard</h1></div>
+      <div className="dashboard"><Dashboard sx={{color:"white",fontSize:"2em"}}/><h2>Admin Dashboard</h2></div>
       <ul className="navItem">
         <li>
           <Link to="/partner-panel/"><ContactPhoneIcon/>Leeds</Link>
@@ -32,7 +32,7 @@ function SideNav() {
         </li>
       </ul>
     </div>
-  );
+  )
 }
 
-export default SideNav;
+export default AdminSideNavigation

@@ -1,27 +1,27 @@
 import React, { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import SideNav from "../../Components/SideNav/SideNav";
-import './partnerPanel.css'
-import MenuAppBar from "../../Components/Navbar/Navbar.jsx";
+import './admin.css'
+import MenuAppBar from "./Navbar.jsx";
+import AdminSideNavigation from "./AdminSideNavigation.jsx";
 
-function PartnerPanel() {
+function Admin_Dashboard() {
   const navigate=useNavigate()
   useEffect(()=>{
-    let logedinUser=JSON.parse(localStorage.getItem("user"))
+    let logedinUser=JSON.parse(localStorage.getItem("admin"))
     console.log(logedinUser)
     if(!logedinUser){
-      navigate("/login")
+      navigate("/admin")
     }
   },[])
   return (
     <div className="mainContainer">
       <MenuAppBar/>
     <div className="panelContainer">
-      <SideNav />
+      <AdminSideNavigation/>
       <Outlet />
     </div>
     </div>
   );
 }
 
-export default PartnerPanel;
+export default Admin_Dashboard;
