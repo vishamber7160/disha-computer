@@ -1,0 +1,48 @@
+.navbar-com{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 50px;
+    background-color: rgb(1, 46, 46);
+    color: white;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.navList{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navList li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.P-Login{
+    text-decoration: none;
+    color: rgb(1, 6, 63);
+    padding: 8px 15px;
+    background-color: rgb(0, 187, 187);
+    border-radius: 5px;
+}
+.P-Login:hover{
+    box-shadow: 0 0 10px 5px rgb(0, 187, 187,0.3);
+}
+
+
+
+
+
+
+.footer{
+    display: flex;
+    position: relative;
+    padding: 20px 40px;
+    background-color: rgb(1, 46, 46);
+    width: 100%;
+    height: 400px;
+    color: white;
+}

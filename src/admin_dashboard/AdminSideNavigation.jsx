@@ -16,19 +16,19 @@ function AdminSideNavigation() {
       <div className="dashboard"><Dashboard sx={{color:"white",fontSize:"2em"}}/><h2>Admin Dashboard</h2></div>
       <ul className="navItem">
         <li>
-          <Link to="/partner-panel/"><ContactPhoneIcon/>Leeds</Link>
+          <Link to="/admin/dashboard/create-center"><ContactPhoneIcon/>New Center</Link>
         </li>
         <li>
-          <Link to="/partner-panel/enquires"><PeopleAltIcon/>Enquires</Link>
+          <Link to="/admin/dashboard/addmissions"><PeopleAltIcon/>All Addmissions</Link>
         </li>
         <li>
-          <Link to="/partner-panel/registration"><AppRegistrationRounded/>Registration</Link>
+          <Link to="/admin/dashboard/"><AppRegistrationRounded/>Registration</Link>
         </li>
         <li>
-          <Link to="/partner-panel/fee-recipt"><LocalPrintshopIcon/>Fee Recipt</Link>
+          <Link to="/admin/dashboard/create-center"><LocalPrintshopIcon/>Fee Recipt</Link>
         </li>
         <li>
-          <Link to="/partner-panel/certificate"><NewspaperTwoTone/>Certificate</Link>
+          <Link to="/admin/dashboard/create-center"><NewspaperTwoTone/>Certificate</Link>
         </li>
       </ul>
     </div>

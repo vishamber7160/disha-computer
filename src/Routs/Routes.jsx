@@ -10,6 +10,9 @@ import UpdateEnquary from "../Components/UpdateEnquiry/UpdateEnquary"
 import Login from "../Pages/Login/Login";
 import Admin_Dashboard from "../admin_dashboard/Admin_Dashboard";
 import AdminLogin from '../admin_dashboard/AdminLogin'
+import New_Center_Form from "../admin_dashboard/admin-componants/newCenterGenForm/New_Center_Form";
+import Addmissions from "../admin_dashboard/admin-componants/all-Addmission/Addmissions";
+import HomePage from "../Pages/HomePage/HomePage";
 
 let user=JSON.parse(localStorage.getItem("user"))
 
@@ -17,7 +20,7 @@ let user=JSON.parse(localStorage.getItem("user"))
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<App/>
+    element:<HomePage/>
   },
   {
     path:"/login",
@@ -29,7 +32,17 @@ const router = createBrowserRouter([
   },
   {
     path:"/admin/dashboard",
-    element:<Admin_Dashboard/>
+    element:<Admin_Dashboard/>,
+    children:[
+      {
+        path:"/admin/dashboard/create-center",
+        element:<New_Center_Form/>
+      },
+      {
+        path:"/admin/dashboard/addmissions",
+        element:<Addmissions/>
+      }
+    ]
   },
   {
     path:"/partner-panel",
